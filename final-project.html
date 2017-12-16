@@ -11796,8 +11796,8 @@ div#notebook {
 </blockquote>
 <p><img src="peer-to-peer.png" style="width: 50%;"/></p>
 <p><br></p>
-<p>In this analysis, we explore historical data from an <a href="https://www.kaggle.com/zaurbegiev/my-dataset">Kaggle data set</a> representing the data of an unknown peer-to-peer loan originators. One of the mission critical aspects to a peer-to-peer loan business is to determine the likelihood of a customer returning the money they lend to him/her. If the company is accurately able to discriminate trustworthy lenders, they will recieve their money + interest back, and turn a profit. If they incorrectly lend money to untrustorthy lenders, they will recieve neither their money or the required interest, and proceed to lose <em>a lot</em> of money.</p>
-<p>Another advantage of ... lower interest rates</p>
+<p>In this analysis, we explore historical data from an <a href="https://www.kaggle.com/zaurbegiev/my-dataset">Kaggle data set</a> representing the data of an unknown peer-to-peer loan originator. One of the mission critical aspects to a peer-to-peer loan business is to determine the likelihood of a customer returning the money they lend to him/her. If the company is accurately able to discriminate trustworthy lenders, they will recieve their money + interest back, and turn a profit. If they incorrectly lend money to untrustorthy lenders, they will recieve neither their money or the required interest, and proceed to lose <em>a lot</em> of money.</p>
+<p>Data Science is a powerful field, having uses from protecting against malware to stopping diseases. However as a relatively new field, many people are not aware of the extent of what data science can achieve. The powerful finance industry as one example suffers from a plethora of problems, from fraud to money laundering to simply managing money, problems that can be solved with the use of data science. This tutorial utilizes some of the most powerful data science techniques to demonstrate the power it has. Our hope is that the finance industry will recognize and help drive the widespread adoption and usage of data science to solve real world problems across society.</p>
 <p>We will go through:</p>
 <ul>
 <li>Curating the data</li>
@@ -17198,12 +17198,13 @@ LJcMIkRERERERETEcvn/AmPzBh96hswAAAAASUVORK5CYII=
 <p>Now we will build the models. We will test 5 different algorithms to build our model, and determine which one is the best based on accuracy.</p>
 <p>The 5 algorithms are:</p>
 <ul>
-<li>Logistic Regression (LR)</li>
-<li>Linear Discriminant Analysis (LDA)</li>
-<li>K-Nearest Neighbors (KNN).</li>
-<li>Classification and Regression Trees (CART).</li>
-<li>Gaussian Naive Bayes (NB).</li>
+<li><a href="https://onlinecourses.science.psu.edu/stat504/node/149">Logistic Regression (LR)</a></li>
+<li><a href="http://sebastianraschka.com/Articles/2014_python_lda.html">Linear Discriminant Analysis (LDA)</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2014/10/introduction-k-neighbours-algorithm-clustering/">K-Nearest Neighbors (KNN)</a></li>
+<li><a href="https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/">Classification and Regression Trees (CART)</a></li>
+<li><a href="https://machinelearningmastery.com/naive-bayes-for-machine-learning/">Gaussian Naive Bayes (NB)</a></li>
 </ul>
+<p>Each of the algorithms above are linked to a more in-depth explanation of them.</p>
 <p>The first two are simple linear algorithms, while the last three are non-linear. We will soon see which one fares the best.</p>
 <p>We will proceed to build the 5 models, and use 10 fold cross validation to evaluate each one.</p>
 <p>Here is an detailed explanation of 10-fold Crossvalidation: <a href="https://www.openml.org/a/estimation-procedures/1">https://www.openml.org/a/estimation-procedures/1</a></p>
@@ -17531,6 +17532,30 @@ avg / total       0.78      0.79      0.70     15454
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We see that the accuracy was 78%! The model was slightly better at predicting "Fully Paid" than "Charged Off", and these aren't bad results for using a predefined algorithm part of scikit-learn.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="5)-Conclusion-and-Summary">5) Conclusion and Summary<a class="anchor-link" href="#5)-Conclusion-and-Summary">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This exploration highlighted just the beginnning of an analysis into loan data with Python, Pandas, Numpy, and Scikit-Learn. We were able to visualize various insights, test multiple hypothesis, and eventually train multiple relatively accurate models to predict whether a lender will default on a loan given 16 standard features of a lender, and selected the Linear Discriminant Analysis as the model of choice.</p>
+<p>To learn more about the technologies used, and specifically about loan default predictions, please visit the following links:</p>
+<ul>
+<li>Complete List of Pandas Tutorials: <a href="https://pandas.pydata.org/pandas-docs/stable/tutorials.html">https://pandas.pydata.org/pandas-docs/stable/tutorials.html</a></li>
+<li>A gentle introduction to sklearn: <a href="https://machinelearningmastery.com/a-gentle-introduction-to-scikit-learn-a-python-machine-learning-library/">https://machinelearningmastery.com/a-gentle-introduction-to-scikit-learn-a-python-machine-learning-library/</a></li>
+<li>UWashington Lecture on Predicting Loan Defaults: <a href="https://www.coursera.org/learn/ml-classification/lecture/ZtvkP/predicting-loan-defaults-with-decision-trees">https://www.coursera.org/learn/ml-classification/lecture/ZtvkP/predicting-loan-defaults-with-decision-trees</a></li>
+<li>Winning Algorithm of a \$10,000 Kaggle Competition about predicing loan defaults (Used Pandas and Scikit-learn as well): <a href="https://github.com/songgc/loan-default-prediction">https://github.com/songgc/loan-default-prediction</a></li>
+</ul>
 
 </div>
 </div>
